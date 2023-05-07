@@ -1,0 +1,16 @@
+path: ../au-air  # dataset root dir
+train: images  # train images (relative to 'path') 128 images
+val: images  # val images (relative to 'path') 128 images
+
+nc: 8
+
+# Classes
+names:
+  0: Human
+  1: Car
+  2: Truck
+  3: Van
+  4: Motorbike
+  5: Bicycle
+  6: Bus
+  7: Trailer
