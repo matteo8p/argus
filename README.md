@@ -1,4 +1,4 @@
-## <div align="center">Argus: Low Cost Computation Method for Monocular Distance Estimation in UAV's</div>
+## <div align="left">Argus: Low Cost Computation Method for Monocular Distance Estimation in UAV's</div>
 
 Argus allows you to estimate the distance of objects from the drone (or any UAV) from only video footage. It uses out of the box YOLOv5 vision AI software and applies a distance estimation calculation to detected objects. 
 
