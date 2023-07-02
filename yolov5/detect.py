@@ -312,13 +312,13 @@ def distance_estimation(bbox, altitude=60, cam_angle=20, cam_config=dji_mavic_3)
     h = altitude / math.cos(cam_angle) 
     theta = math.atan((x_c - x_f) / (y_f - y_c))
     
-    if(x_f < x_c and y_f < y_c): # quadrant 2
+    if(x_f < x_c and y_f < y_c): # quadrant 3
         theta = theta + 3 * math.pi / 2
-    elif(x_f > x_c and y_f < y_c): # quadrant 3
+    elif(x_f > x_c and y_f < y_c): # quadrant 2 
         theta = theta + 3 * math.pi / 2
-    elif(x_f > x_c and y_f > y_c): # quadrant 4 
+    elif(x_f > x_c and y_f > y_c): # quadrant 1
         theta = theta + math.pi / 2
-    else: 
+    else:                           #quadrant 4
         theta = theta + math.pi / 2
     
     delta = math.atan((math.sqrt((x_f - x_c)**2 + (y_f - y_c)**2)) / f_pixel)
